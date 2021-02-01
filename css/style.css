@@ -1,0 +1,82 @@
+#my-photo {
+    max-width: 600px;
+    max-height: 600px;
+    background-position: center;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0px auto;
+}
+
+.introduction {
+    text-align: center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+}
+
+.i-am, .i-like, .interests {
+    text-align: center;
+}
+
+.about-list {
+    list-style: none;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+    .my-photo {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+.projects-heading {
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.project-image {
+    justify-self: center;
+    padding: 4%;
+}
+
+@media (max-width: 650px) {
+    .projects-grid {
+        grid-template-columns: 100%;
+    }
+    .my-photo {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 650px) {
+    .links-and-contact {
+        grid-template-columns: 100%;
+    }
+}
