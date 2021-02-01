@@ -1,2 +1,2 @@
-# my-portfolio
-a page created using css grids 
+# my-portfolio-with-career-foundary
+a responsive page created using css grids. 
