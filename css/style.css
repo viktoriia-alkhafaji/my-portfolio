@@ -1,9 +1,19 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    background: #caebca;
 }
 
 h1, h2,h3,h4 {
     font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    max-width: 840px;
+    margin: 0px auto;
+}
+
+.container > div {
+    margin: 20px auto;
 }
 
 #profile-picture {
@@ -18,10 +28,7 @@ h1, h2,h3,h4 {
     box-shadow: 0 8px 12px 0 rgb(34,60,80, 0.16);
 }
 
-.container {
-    max-width: 840px;
-    margin: 0px auto;
-}
+
 
 .introduction {
     text-align: center;
@@ -115,6 +122,21 @@ h1, h2,h3,h4 {
 .links-list {
     list-style: none;
     padding: 0;
+}
+
+form input, textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+form input[type="submit"] {
+    width: 250px;
+    padding: 5px 0;
+}
+
+.submit-buttom-wrapper {
+    margin: 20px 0;
 }
 
 @media (max-width: 650px) {
