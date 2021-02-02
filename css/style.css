@@ -1,3 +1,11 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2,h3,h4 {
+    font-family: 'Roboto Mono', monospace;
+}
+
 #profile-picture {
     border-radius: 50%;
     width: 150px;
@@ -52,10 +60,37 @@
     grid-template-columns: 50% 50%;
 }
 
-.project-image {
+.project-image-wrapping {
     justify-self: center;
     padding: 4%;
+    position: relative;
+}
+
+.project-image-wrapping:hover > h4 {
+    visibility: visible;
+}
+
+.project-image-wrapping > h4 {
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    transform: translate(-50%,-50%);
+    color: white;
+    visibility: hidden;
+    z-index: 2;
+    transition: all ease-in-out 0.2s;
+}
+
+.project-image {
     max-width: 92%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(34, 60, 80, 0.16);
+    transition: all ease-in-out .2s;
+}
+
+.project-image:hover {
+    box-shadow: 0 8px 16px 0 rgba(34, 60, 80, 0.16);
+    filter: brightness(0.75);
 }
 
 @media (max-width: 650px) {
