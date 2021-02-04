@@ -47,11 +47,32 @@ hr {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 32% 32% 32%;
+    grid-template-areas: 
+    "interests interests"
+    "i-am i-like";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.about-grid div {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
 .i-am, .i-like, .interests {
     text-align: center;
+}
+
+#i-am {
+    grid-area: 'i-am';
+}
+
+#i-like {
+    grid-area: 'i-like';
+}
+
+#interests {
+    grid-area: 'interests';
 }
 
 .about-list {
@@ -153,7 +174,7 @@ form input, textarea {
     padding: 5px;
     border-radius: 5px;
     width: 240px;
-    background: #e3d0b9;
+    background: #ece8e4;
 }
 
 form input[type="submit"] {
