@@ -50,34 +50,37 @@ hr {
     grid-template-areas: 
     "interests interests"
     "i-am i-like";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
     grid-gap: 5px;
 }
 
 .about-grid div {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    margin: 30px 0;
+    text-align: center;
 }
 
 .i-am, .i-like, .interests {
     text-align: center;
 }
 
-#i-am {
-    grid-area: 'i-am';
+.i-am {
+    grid-area: i-am;
 }
 
-#i-like {
-    grid-area: 'i-like';
+.i-like {
+    grid-area: i-like;
 }
 
-#interests {
-    grid-area: 'interests';
+.interests {
+    grid-area: interests;
 }
 
 .about-list {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 
 @media (max-width: 480px) {
