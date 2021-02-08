@@ -7,6 +7,7 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/toasts.css">
 
 </head>
 
@@ -83,14 +84,15 @@
             </div>
 
             <div class="form-wrapper">
+                <div class="empty-div-for-toasts"></div>
                 <form action="#">
                     <label for="email">
                         <h4>Email: </h4>
-                        <input id="email-form" type="email" placeholder="enter your email">
+                        <input value='34@sdf' id="email-form" type="email" placeholder="enter your email">
                     </label>
                     <label for="message">
                         <h4>Message: </h4>
-                        <textarea name="message" id="massage-form" cols="30" rows="10" placeholder="Your message ..."></textarea>
+                        <textarea name="message" id="message-form" cols="30" rows="10" placeholder="Your message ..." value='234dfsdfsf'></textarea>
                     </label>
                     <div class="submit-buttom-wrapper">
                         <input id='submit-button' type="submit" value="Send message">
@@ -101,6 +103,7 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/toasts.js"></script>
 </body>
 
 </html>

@@ -1,14 +1,14 @@
-let massageForm = document.querySelector('#massage-form');
+let messageForm = document.querySelector('#message-form');
 let emailForm = document.querySelector('#email-form');
 
-massageForm.onkeyup = abilityOfSendButton;
+messageForm.onkeyup = abilityOfSendButton;
 emailForm.onkeyup = abilityOfSendButton;
 
 function abilityOfSendButton() {
-    if (massageForm.value !== '' && emailForm.value !== '') {
+    if (messageForm.value !== '' && emailForm.value !== '') {
         submitButton.disabled = false;
     }
-    else if (massageForm.value == '' || emailForm.value == '') {
+    else if (messageForm.value == '' || emailForm.value == '') {
         submitButton.disabled = true;
     }
 }
@@ -19,10 +19,10 @@ submitButton.disabled = true;
 submitButton.onclick = function (event) {
     event.preventDefault();
     if(emailForm.value.includes('@')){
-        console.log('Thank you for your massage');
+        toasts('Thank you for your message!', 3000, 'success-color');
     }
     else {
-        console.log('Please fill in the correct e-mail adress');
+        toasts('Please fill in the correct e-mail adress',3000, 'error-color');
     }
     
 }
