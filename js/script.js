@@ -18,11 +18,15 @@ let submitButton = document.querySelector('#submit-button');
 submitButton.disabled = true;
 submitButton.onclick = function (event) {
     event.preventDefault();
-    if(emailForm.value.includes('@')){
-        toasts('Thank you for your message!', 3000, 'success-color');
+    if(!emailForm.value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)){
+        toasts('Please fill in a valid e-mail adress',3000, 'error-color');
+        
+    }
+    else if (messageForm.value.length<20){
+        toasts('Your message seems to be too short. Enter at least 20 symbols.', 4000, 'error-color');
     }
     else {
-        toasts('Please fill in the correct e-mail adress',3000, 'error-color');
+        toasts('Your message was sent! Thank you for your message!', 5000, 'success-color');
     }
     
 }

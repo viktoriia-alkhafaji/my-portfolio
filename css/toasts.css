@@ -1,13 +1,17 @@
-.toasts {
+.toasts-field {
     float: right;
-    max-width: 248px;
+    max-width: 300px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.toasts { 
+    text-align: center;
     padding: 20px 30px;
     margin: 20px 10px;
     border-radius: 5px;
     color: #ffffff;
-    position: fixed;
-    top: 0px;
-    right: 0px;
 }
 
 .success-color {
